@@ -2,7 +2,8 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
-  [...block.children].forEach((row) => {
+  const { image, text } = block.children;
+  [image, text].forEach((row) => {
     const containerDiv = document.createElement('div');
     moveInstrumentation(row, containerDiv);
     while (row.firstElementChild) containerDiv.append(row.firstElementChild);
