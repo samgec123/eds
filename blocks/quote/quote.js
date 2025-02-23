@@ -2,26 +2,41 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
-  const { image, text } = block.children;
-  [image, text].forEach((row) => {
-    const containerDiv = document.createElement('div');
-    moveInstrumentation(row, containerDiv);
-    while (row.firstElementChild) containerDiv.append(row.firstElementChild);
-    [...containerDiv.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) {
-        const pictureDiv = document.createElement('div');
-        pictureDiv.append(div.querySelector('picture'));
-        div.className = 'quote-image';
-        div.append(pictureDiv);
-      } else {
-        const textDiv = document.createElement('div');
-        textDiv.append(div);
-        div.className = 'quote-body';
-        div.append(textDiv);
-      }
-    });
-    block.append(containerDiv);
-  });
+  const containerDiv = document.createElement('div');
+  containerDiv.className = 'container text-center';
+
+  const rowDiv = document.createElement('div');
+  rowDiv.className = 'row';
+
+  const imageColDiv = document.createElement('div');
+  imageColDiv.className = 'col';
+
+  const textColDiv = document.createElement('div');
+  textColDiv.className = 'col';
+
+  const { children } = block;
+  const image = children[0];
+  const text = children[1];
+
+  if (image) {
+    const pictureDiv = document.createElement('div');
+    pictureDiv.append(image.querySelector('picture'));
+    imageColDiv.append(pictureDiv);
+  }
+
+  if (text) {
+    const textDiv = document.createElement('div');
+    textDiv.append(text.querySelector('p'));
+    textColDiv.append(textDiv);
+  }
+
+  rowDiv.append(imageColDiv);
+  rowDiv.append(textColDiv);
+  containerDiv.append(rowDiv);
+
+  block.textContent = '';
+  block.append(containerDiv);
+
   block.querySelectorAll('picture > img').forEach((img) => {
     const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
     moveInstrumentation(img, optimizedPic.querySelector('img'));
