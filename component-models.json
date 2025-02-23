@@ -217,4 +217,18 @@
       }
     ]
   }
+  {
+    "id": "list-creator-top-level",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "page",
+        "label": "Page",
+        "multi": false
+      }
+    ]
+  }
+  
+
 ]
