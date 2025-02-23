@@ -21,11 +21,11 @@
         "id": "creator",
         "fields": [
             {
-            "component": "reference",
-            "valueType": "string",
-            "name": "page",
-            "label": "Page",
-            "multi": false
+                "component": "richtext",
+                "name": "text",
+                "value": "",
+                "label": "Text",
+                "valueType": "string"
             }
         ]
         }
