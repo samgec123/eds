@@ -230,19 +230,19 @@
     ]
   },
   {
-    "id": "carousel-slides",
+    "id": "carousel-slide",
     "fields": [
       {
         "component": "text",
         "name": "text",
-        "value": "",
+        "value": "put main text",
         "label": "Text",
         "valueType": "string"
       },
       {
         "component": "richtext",
         "name": "description",
-        "value": "",
+        "value": "put some description",
         "label": "Description",
         "valueType": "string"
       },

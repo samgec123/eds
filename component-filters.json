@@ -45,7 +45,7 @@
   {
     "id": "carousels",
     "components": [
-      "carousel-slides"
+      "carousel-slide"
     ]
   }
 ]
