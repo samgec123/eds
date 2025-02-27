@@ -14,7 +14,7 @@ export default function decorate(block) {
       imgSrc: 'path/to/image3.jpg',
       title: 'Third slide label',
       description: 'Some representative placeholder content for the third slide.',
-    }
+    },
   ];
 
   // Create the carousel container
