@@ -1,6 +1,6 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
-
+/* this is carousel block */
 export default function decorate(block) {
   const carouselId = 'carouselExampleCaptions';
   const carousel = document.createElement('div');
