@@ -2,19 +2,19 @@
 export default function decorate(block) {
   const slidesData = [
     {
-      imgSrc: "path/to/image1.jpg",
-      title: "First slide label",
-      description: "Some representative placeholder content for the first slide."
+      imgSrc: 'path/to/image1.jpg',
+      title: 'First slide label',
+      description: 'Some representative placeholder content for the first slide.'
     },
     {
-      imgSrc: "path/to/image2.jpg",
-      title: "Second slide label",
-      description: "Some representative placeholder content for the second slide."
+      imgSrc: 'path/to/image2.jpg',
+      title: 'Second slide label',
+      description: 'Some representative placeholder content for the second slide.'
     },
     {
-      imgSrc: "path/to/image3.jpg",
-      title: "Third slide label",
-      description: "Some representative placeholder content for the third slide."
+      imgSrc: 'path/to/image3.jpg',
+      title: 'Third slide label',
+      description: 'Some representative placeholder content for the third slide.'
     }
   ];
 
