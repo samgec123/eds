@@ -2,7 +2,8 @@
   "mappings": [
     "/content/sites/:/",
     "/content/sites/configuration:/.helix/config.json",
-    "/content/sites/metadata:/metadata.json"
+    "/content/sites/metadata:/metadata.json",
+    "/content/sites/placeholders.json:/placeholders.json"
   ],
   "includes": [
     "/content/sites/"
