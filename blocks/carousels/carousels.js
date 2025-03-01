@@ -2,8 +2,8 @@ import { createOptimizedPicture, fetchPlaceholders } from '../../scripts/aem.js'
 import { moveInstrumentation } from '../../scripts/scripts.js';
 /* this is carousel block */
 export default async function decorate(block) {
-  let placeholder = await fetchPlaceholders();
-  console.log(placeholder['myKey']);
+  const placeholder = await fetchPlaceholders();
+  console.log(placeholder.myKey);
   const carouselId = 'carouselExampleCaptions';
   const carousel = document.createElement('div');
   carousel.id = carouselId;
