@@ -1,9 +1,0 @@
-{
-  "mappings": [
-    "/content/sites/:/",
-    "/content/sites/configuration:/.helix/config.json"
-  ],
-  "includes": [
-    "/content/sites"
-  ]
-}
