@@ -1,7 +1,8 @@
 {
   "mappings": [
     "/content/sites/:/",
-    "/content/sites/configuration:/.helix/config.json"
+    "/content/sites/configuration:/.helix/config.json",
+    "/content/sites/placeholders:/placeholders.json"
   ],
   "includes": [
     "/content/sites"
