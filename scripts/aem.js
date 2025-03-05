@@ -747,6 +747,5 @@ export {
   toCamelCase,
   toClassName,
   waitForFirstImage,
-  wrapTextNodes
+  wrapTextNodes,
 };
-
