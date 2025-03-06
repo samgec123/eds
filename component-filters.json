@@ -16,7 +16,9 @@
       "cards",
       "columns",
       "fragment",
-      "carousels"
+      "carousels",
+      "quote",
+      "creator"
     ]
   },
   {
@@ -38,6 +40,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "carousels",
+    "components": [
+      "carousel-slide"
     ]
   }
 ]
