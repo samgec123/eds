@@ -233,24 +233,25 @@
     "id": "carousel-slide",
     "fields": [
       {
-        "component": "text",
-        "name": "text",
-        "value": "put main text",
-        "label": "Text",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "value": "put some description",
-        "label": "Description",
-        "valueType": "string"
-      },
-      {
         "component": "reference",
+        "valueType": "string",
         "name": "image",
         "label": "Image",
         "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
       }
     ]
   }
